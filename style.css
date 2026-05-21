@@ -1,14 +1,31 @@
+/* ----------------------------- */
+/*        GLOBAL STYLING        */
+/* ----------------------------- */
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
     background: #0d0d0d;
     color: #ffffff;
+    animation: fadeIn 1.2s ease-out;
 }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------------------------- */
+/*            HEADER             */
+/* ----------------------------- */
 
 header {
     text-align: center;
     padding: 120px 20px 80px;
     background: linear-gradient(135deg, #111, #1a1a1a);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-out;
 }
 
 h1 {
@@ -23,6 +40,17 @@ h2 {
     margin-top: 0;
 }
 
+.intro {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    animation: fadeIn 1.4s ease-out;
+}
+
+/* ----------------------------- */
+/*            CONTENT            */
+/* ----------------------------- */
+
 .section {
     max-width: 900px;
     margin: 60px auto;
@@ -35,7 +63,31 @@ h2 {
     border-radius: 12px;
     border: 1px solid #222;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    transition: 0.25s ease;
 }
+
+/* Animation delays for staggered appearance */
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.5s; }
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #333;
+    background: #181818;
+}
+
+/* Accent color for section titles */
+h3 {
+    color: #4da6ff;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------- */
+/*            LISTS              */
+/* ----------------------------- */
 
 .skills-list {
     list-style: none;
@@ -52,12 +104,21 @@ h2 {
     border-bottom: none;
 }
 
+/* ----------------------------- */
+/*            FOOTER             */
+/* ----------------------------- */
+
 footer {
     text-align: center;
     padding: 40px;
     opacity: 0.6;
     font-size: 0.9rem;
+    border-top: 1px solid #222;
 }
+
+/* ----------------------------- */
+/*            LINKS              */
+/* ----------------------------- */
 
 a {
     color: #4da6ff;
