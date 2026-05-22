@@ -1,45 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoto — Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Shoto – Developer & Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="logo">ShotoSystems</div>
+    <nav class="nav">
+      <a href="#hero">Main</a>
+      <a href="#contact">Contact / Support</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </header>
 
-<header>
-    <h1>Welcome</h1>
-    <h2>I'm Shoto — a 16-year-old developer from Germany</h2>
-    <p class="intro">Developer • Problem Solver • Tech Enthusiast</p>
-</header>
-
-<section class="section">
-    <div class="card">
-        <h3>About Me</h3>
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-content">
+        <h1>Hey, I'm Shoto.</h1>
         <p>
-            I'm a young developer passionate about building systems, exploring and understanding operating systems,
-            and creating clean, efficient solutions.  
-            Feel free to reach out if you need help or want to collaborate. (Note: All services are free)
+          A Developer, web‑dev learner, and someone who enjoys helping others —
+          with small, free services around web, cloud & systems and too much free-time.
         </p>
-        <p><strong>Mail:</strong> <a href="mailto:contact@shoto.is-a.dev">contact@shoto.is-a.dev</a></p>
+        <p class="hero-tagline">
+          <span>Java</span> · <span>Python</span> · <span>Operating Systems</span> · <span>Cloud</span> · <span>Web</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="timeline" class="section timeline">
+      <h2>Developer Timeline</h2>
+      <div class="timeline-line"></div>
+      <div class="timeline-items">
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3>2020 – First Steps</h3>
+          <p>Small scripts, experiments, lots of trial & error — but fun.</p>
+        </article>
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3>2021 – Java</h3>
+          <p>Writing first line of real code.</p>
+        </article>
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3>2024 – Python</h3>
+          <p>More structure, OOP, school projects, and real learning.</p>
+        </article>
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3>2025 – Web & Cloud</h3>
+          <p>GitHub Pages, domains, DNS, cloud basics — first deployments.</p>
+        </article>
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3>2026+ – ShotoSystems</h3>
+          <p>Support, small services, learning projects — helping others.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Java</h3>
+          <p>Basics, OOP, school projects.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Automation, tools, scripting.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Operating Systems</h3>
+          <p>Windows, macOS, Linux basics, Virtual Machines, troubleshooting.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud & Web</h3>
+          <p>GitHub Pages, DNS, simple cloud setups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact / Support</h2>
+      <p class="contact-intro">
+        Need help, support, or want to send a message?
+        Write me — I’ll get back to you as soon as I can.
+      </p>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <label for="type">Request Type</label>
+          <select id="type" name="type" required>
+            <option value="">Please choose…</option>
+            <option value="support">Support</option>
+            <option value="contact">Contact</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Select type first…</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required
+            placeholder="Describe your issue or message…"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn">
+          Send
+        </button>
+
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="legal.html#privacy">Privacy</a>
+      <a href="legal.html#imprint">Imprint</a>
     </div>
+    <div class="footer-copy">© 2026 Shoto</div>
+  </footer>
 
-    <div class="card">
-        <h3>Experience</h3>
-        <ul class="skills-list">
-            <li>Java</li>
-            <li>Python</li>
-            <li>Operating Systems (macOS, Windows, Linux)</li>
-            <li>Cloud Setup</li>
-            <li>Databases</li>
-        </ul>
-    </div>
-</section>
-
-<footer>
-    © 2026 Shoto — All rights reserved.
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
