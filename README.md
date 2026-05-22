@@ -1,3 +1,3 @@
 # shotos-website
 
-Visit at https://shotosystems.github.io/shotos-website/
+Visit at https://shoto.is-a.dev
