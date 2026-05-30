@@ -83,7 +83,7 @@ Costumer information:
 
 Please note: This is an automatic generated template! Please do not change any content!
 
-Our services are fully free and there are no hidden fees! Feel free to ask if you have questions! You can give them to support@shoto.is-a.dev!
+Our services are fully free and there are no hidden fees! Feel free to ask if you have questions! You can submit them through the same formular at shoto.is-a.dev!
 
 Shoto 😄`;
 
