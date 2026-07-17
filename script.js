@@ -88,7 +88,7 @@ Our services are fully free and there are no hidden fees! Feel free to ask if yo
 Shoto 😄`;
 
   // Build mailto link
-  const mailto = `mailto:contact@shoto.is-a.dev?subject=${encodeURIComponent("New Ticket (" + type + ")")}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:contact@shoto.dev?subject=${encodeURIComponent("New Ticket (" + type + ")")}&body=${encodeURIComponent(body)}`;
 
   // Open mail client
   window.location.href = mailto;
