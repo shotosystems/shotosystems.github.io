@@ -1,224 +1,28 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<title>Instagram Post – Shoto</title>
-<style>
-:root {
-  --bg: #05060a;
-  --bg-alt: #0b0d14;
-  --accent2: #836fff;
-  --accent2-soft: rgba(131, 111, 255, 0.18);
-  --text: #f9fafb;
-  --muted: #9ca3af;
-  --radius: 14px;
-  --shadow: 0 18px 45px rgba(0,0,0,0.45);
-}
+<section class="section promo">
+  <div class="promo-box">
+    <h1>Hey, I'm Shoto.</h1>
+    <p class="subtitle">A german developer</p>
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, "SF Pro Text", sans-serif;
-  background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
-  color: var(--text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+    <p class="promo-text">
+      My services are fully free.<br>
+      If you need help with:
+    </p>
 
-.post {
-  width: 1080px;
-  height: 1350px;
-  padding: 3rem;
-  background: rgba(15, 23, 42, 0.85);
-  border-radius: 24px;
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
-}
+    <ul class="promo-list">
+      <li>MDM</li>
+      <li>Apple devices</li>
+      <li>Windows devices</li>
+      <li>Technical stuff</li>
+      <li>Or just a normal website</li>
+      <li>Maybe also a project where you search people to help you</li>
+      <li>Or needing a program</li>
+    </ul>
 
-/* Header */
-.post h1 {
-  font-size: 3rem;
-  margin: 0;
-  margin-bottom: 0.5rem;
-}
+    <p class="promo-text">
+      Contact me — click the link in my profile to get to my website<br>
+      where the contact formular is.
+    </p>
 
-.post p {
-  font-size: 1.25rem;
-  color: var(--muted);
-  max-width: 800px;
-  line-height: 1.55;
-}
-
-/* Tags */
-.tags {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tags span {
-  padding: 0.45rem 1rem;
-  font-size: 1rem;
-  border-radius: 999px;
-  background: rgba(131, 111, 255, 0.12);
-  border: 1px solid rgba(131, 111, 255, 0.35);
-}
-
-/* Divider */
-.divider {
-  margin: 3rem 0;
-  height: 2px;
-  width: 70%;
-  background: linear-gradient(90deg, transparent, var(--accent2), transparent);
-}
-
-/* Timeline */
-.timeline {
-  position: relative;
-  margin-top: 2rem;
-}
-
-.timeline-line {
-  position: absolute;
-  left: 1.2rem;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--accent2), transparent);
-  opacity: 0.7;
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 3rem;
-  margin-bottom: 2rem;
-}
-
-.timeline-item .dot {
-  position: absolute;
-  left: 0.75rem;
-  top: 0.35rem;
-  width: 1rem;
-  height: 1rem;
-  background: var(--accent2);
-  border-radius: 999px;
-  box-shadow: 0 0 0 6px var(--accent2-soft);
-}
-
-.timeline-item h3 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.timeline-item p {
-  margin: 0.25rem 0 0;
-  font-size: 1.1rem;
-  color: var(--muted);
-}
-
-/* Skills Grid */
-.skills {
-  margin-top: 3rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-
-.skill-card {
-  background: rgba(15, 23, 42, 0.9);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  box-shadow: var(--shadow);
-}
-
-.skill-card h4 {
-  margin: 0 0 0.5rem;
-  font-size: 1.3rem;
-}
-
-.skill-card p {
-  margin: 0;
-  font-size: 1.05rem;
-  color: var(--muted);
-}
-</style>
-</head>
-
-<body>
-<div class="post">
-
-  <h1>Hey, I'm Shoto.</h1>
-  <p>Developer, web-dev learner, and someone who enjoys helping others — with small, free services around web, cloud & systems.</p>
-
-  <div class="tags">
-    <span>Java</span>
-    <span>Python</span>
-    <span>Operating Systems</span>
-    <span>Cloud</span>
-    <span>Web</span>
+    <p class="promo-end">CU :)</p>
   </div>
-
-  <div class="divider"></div>
-
-  <h2>Developer Timeline</h2>
-
-  <div class="timeline">
-    <div class="timeline-line"></div>
-
-    <div class="timeline-item">
-      <div class="dot"></div>
-      <h3>2020 – First Steps</h3>
-      <p>Small scripts, experiments, lots of trial & error — but fun.</p>
-    </div>
-
-    <div class="timeline-item">
-      <div class="dot"></div>
-      <h3>2021 – Java</h3>
-      <p>Writing first line of real code.</p>
-    </div>
-
-    <div class="timeline-item">
-      <div class="dot"></div>
-      <h3>2024 – Python</h3>
-      <p>More structure, OOP, school projects, and real learning.</p>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h4>Java</h4>
-        <p>Basics, OOP, school projects.</p>
-      </div>
-
-      <div class="skill-card">
-        <h4>Python</h4>
-        <p>Automation, tools, scripting.</p>
-      </div>
-
-      <div class="skill-card">
-        <h4>Operating Systems</h4>
-        <p>Windows, macOS, Linux basics, VMs.</p>
-      </div>
-
-      <div class="skill-card">
-        <h4>Cloud & Web</h4>
-        <p>GitHub Pages, DNS, simple cloud setups.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-</body>
-</html>
+</section>
