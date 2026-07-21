@@ -461,4 +461,21 @@ textarea {
     top: 3.2rem;
     bottom: 2rem;
   }
+
+  /* Promo Section */
+.promo-intro p,
+.promo-outro p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.promo-end {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--accent2);
+  text-align: center;
+}
+
 }
