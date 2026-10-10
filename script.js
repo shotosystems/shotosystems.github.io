@@ -16,6 +16,12 @@ const categories = {
     "Feedback",
     "Idea / Collaboration",
     "Other"
+  ],
+  cloud: [
+    "Registration",
+    "Reactivation of account",
+    "Support",
+    "Other"
   ]
 };
 
