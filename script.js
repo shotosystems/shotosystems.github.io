@@ -15,14 +15,9 @@ const categories = {
     "General request",
     "Feedback",
     "Idea / Collaboration",
+    "Cloud Service Request",
     "Other"
   ],
-  cloud: [
-    "Registration",
-    "Reactivation of account",
-    "Support",
-    "Other"
-  ]
 };
 
 // -------------------------------
