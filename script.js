@@ -18,6 +18,12 @@ const categories = {
     "Cloud Service Request",
     "Other"
   ],
+  cloud: [
+    "Pricing",
+    "Support",
+    "Activating Account",
+    "Other"
+  ]
 };
 
 // -------------------------------
